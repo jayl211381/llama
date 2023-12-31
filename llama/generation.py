@@ -82,7 +82,7 @@ class Llama:
 
         """
         if not torch.distributed.is_initialized():
-            torch.distributed.init_process_group("nccl")
+            torch.distributed.init_process_group("gloo")
         if not model_parallel_is_initialized():
             if model_parallel_size is None:
                 model_parallel_size = int(os.environ.get("WORLD_SIZE", 1))
