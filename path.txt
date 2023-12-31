@@ -1,0 +1,3 @@
+export PATH=$PATH:"/C:\Program Files (x86)\GnuWin32\bin"
+export PATH=$PATH:"/C:\Users\Jayl2\OneDrive\llama"
+echo $PATH
