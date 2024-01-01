@@ -2,15 +2,17 @@
 
 # torchrun --nproc_per_node 1 example_chat_completion.py \--ckpt_dir llama-2-7b-chat/ \--tokenizer_path tokenizer.model \--max_seq_len 512 --max_batch_size 6
 
-# torchrun --nproc_per_node 1 example_chat_completion.py \
-#     --ckpt_dir llama-2-7b-chat/ \
-#     --tokenizer_path tokenizer.model \
-#     --max_seq_len 512 --max_batch_size 6
-
-torchrun --nproc_per_node 1 example_text_completion.py \
-    --ckpt_dir llama-2-7b/ \
+torchrun --nproc_per_node 1 example_chat_completion.py \
+    --ckpt_dir llama-2-7b-chat/ \
     --tokenizer_path tokenizer.model \
-    --max_seq_len 128 --max_batch_size 4
+    --max_seq_len 512 --max_batch_size 6
+
+# torchrun --nproc_per_node 1 example_text_completion.py \
+#     --ckpt_dir llama-2-7b/ \
+#     --tokenizer_path tokenizer.model \
+#     --max_seq_len 128 --max_batch_size 4
+
+torchrun --nproc_per_node 1 chat_7b.py
 
 # For git bash
 # conda activate c:/Users/Jayl2/OneDrive/llama/.conda

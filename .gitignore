@@ -164,3 +164,7 @@ llama-2-7b-chat/
 llama-2-13b-chat/
 md5sums.exe
 wget.exe
+
+C4_local/data_json/
+C4_local/data_pickle/
+
